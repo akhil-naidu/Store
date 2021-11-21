@@ -10,3 +10,16 @@ export const reducer = (state, action) => {
       return state;
   }
 };
+
+export const animeReducer = (state, action) => {
+  // TODO: Need to use this
+  switch (action.type) {
+    case 'setDetails':
+      return { ...state, details: action.payload };
+
+    case 'setImages':
+      return { ...state, images: action.payload };
+    default:
+      return state;
+  }
+};
